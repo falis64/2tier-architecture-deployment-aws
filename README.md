@@ -2,7 +2,7 @@
 
 We use 2-tiered architecture in order to eliminate the risk of a single poing failure.
 
-To copy app to your AWS instance, follow the steps below:
+# To copy app to your AWS instance, follow the steps below:
 
 1) Open 2 git bash terminal; one for to connect to your EC2 instance and one for your local machine
 2) In the local machine type the following command ```scp -i "tech221.pem" -r /Users/Falis/OneDrive/Documents/Virtualisation/app ubuntu@ec2-52-19-182-1.eu-west-1.compute.amazonaws.com:/home/ubuntu/```. The purpose of these commands are:
@@ -15,7 +15,7 @@ To copy app to your AWS instance, follow the steps below:
 
 ``` ubuntu@ec2-52-19-182-1.eu-west-1.compute.amazonaws.com:/home/ubuntu/``` - this provides the destination to the EC2 machine
 
-Installing required dependencies:
+# Installing required dependencies:
 
 ```sudo apt-get install python-software-properties``` - this installs python software properties
 
@@ -51,7 +51,7 @@ You can copy the IPv4 address from your instance into the browser to access the 
 
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/129381619/234063033-10127fa9-8841-4402-a8b7-0508bcbbacd5.png">
 
-Creating new EC2 Instance for DB
+# Creating new EC2 Instance for DB
 
 Follow the steps below to create a new EC2 instance for database (DB)
 
@@ -88,7 +88,7 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 
 sudo systemctl start mongod
 ```
-Connecting App machine and DB machine
+# Connecting App machine and DB machine
 
 1) Open a git bash terminal and cd into the home folder
 
